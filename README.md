@@ -3,32 +3,17 @@ Easy visualization of color plates using Plotly. Create, customize, and visualiz
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Installation](#installation)
-- [Modules and Functions](#modules-and-functions)
+- [Quickstart](#Quickstart)
   - [display_color_plate](#display_color_plate)
   - [gradient](#gradient)
+- [Installation](#installation)
 - [Usage Examples](#usage-examples)
 - [License](#license)
 
 ## Introduction
 "color-plate-visualizer" is a Python library designed for the easy visualization and creation of color palettes. It provides functionalities to display color palettes and create gradients between colors. The repository is built on [Plotly](https://github.com/plotly/plotly.py), a popular open-source graphing library, and offers a user-friendly way to work with color schemes in design, art, or any creative application. Special thanks to the [Plotly project](https://github.com/plotly/plotly.py) for providing the underlying visualization capabilities.
 
-## Installation
-You can install the "color-plate-visualizer" by cloning the repository or downloading the source code.
-
-### Dependencies
-- Plotly
-- colour
-
-### Installation Steps
-1. Clone the repository or download the ZIP file.
-2. Navigate to the directory and install the required dependencies.
-   ```bash
-   pip install plotly colour
-   ```
-
-## Modules and Functions
-
+## Quickstart
 ### `display_color_plate`
 Displays a horizontal bar plot representing the given colors.
 
@@ -38,9 +23,11 @@ Displays a horizontal bar plot representing the given colors.
 #### Example
 ```python
 from visualizer import display_color_plate
-colors = ['#FF0000', '#00FF00', '#0000FF']
+colors = ['#19D3F3', '#FF6692', '#7D5DEF', '#FF97FF', '#FFA500']
 display_color_plate(colors)
 ```
+![Original Color Palette](original.png)
+
 
 ### `gradient`
 Generates a gradient between the given colors.
@@ -54,9 +41,18 @@ Generates a gradient between the given colors.
 #### Example
 ```python
 from visualizer import gradient
-colors = ['#FF0000', '#00FF00', '#0000FF']
+colors = ['#19D3F3', '#FF6692', '#7D5DEF', '#FF97FF', '#FFA500']
 gradient_colors = gradient(colors, n_sampled=9)
 ```
+![Gradient Colors](gradient.png)
+
+## Installation
+You can install the "color-plate-visualizer" by cloning the repository or downloading the source code.
+1. Clone the repository or download the ZIP file.
+2. Navigate to the directory and install the required dependencies.
+   ```bash
+   pip install plotly colour
+   ```
 
 ## Usage Examples
 You can find comprehensive examples in the [example.py](./example.py) file, demonstrating how to visualize color palettes and create custom gradients.
