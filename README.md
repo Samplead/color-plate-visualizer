@@ -1,2 +1,2 @@
 # color-plate-visualizer
-easy visualization of color plates using plotly
+Easy visualization of color plates using plotly
