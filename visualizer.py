@@ -63,9 +63,3 @@ def gradient(colors, n_sampled, shuffle_before_grad =False, start_with_original=
         gradient_colors = orig_colors + only_new_colors
     return gradient_colors[:n_sampled]
 
-color_palette = ['#7D5DEF', '#5B48FF', '#7799E7', '#49B7FF', '#FF509F', '#F4789F', '#B29AE7', '#979797', '#77B3DE', '#FFA500']
-#['#636EFA', '#EF553B', '#00CC96', '#AB63FA', '#FFA15A', '#19D3F3', '#FF6692', '#B6E880', '#FF97FF', '#FECB52']
-
-display_color_plate(color_palette)
-gradient_colors = gradient(color_palette, n_sampled=12, shuffle_before_grad=True)
-display_color_plate(gradient_colors)
