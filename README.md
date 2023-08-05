@@ -63,3 +63,6 @@ You can find comprehensive examples in the [example.py](./example.py) file, demo
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+## Credits
+Built with love by [Yotam Nahum](https://github.com/yotamnahum), utilizing the [Plotly project](https://github.com/plotly/plotly.py) for visualization. Special thanks to the Plotly team for their outstanding work.
